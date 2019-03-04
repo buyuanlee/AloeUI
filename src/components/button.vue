@@ -1,6 +1,5 @@
 <template>
-    <button class="aloe-button" :class="{[`position-${iconPosition}`]:true}"
-            @click="$emit('click')">
+    <button class="aloe-button" :class="{[`position-${iconPosition}`]:true}">
         <aloe-icon class="icon" v-if="icon&&!loading" :name="icon"></aloe-icon>
         <aloe-icon class="loading icon" v-if="loading" name="loading"></aloe-icon>
         <div class="content">

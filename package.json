@@ -1,6 +1,7 @@
 {
   "name": "aloeui",
   "version": "0.1.0",
+  "main": "index.js",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

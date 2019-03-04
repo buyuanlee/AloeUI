@@ -7,7 +7,7 @@
             <aloe-button>主要按钮</aloe-button>
         </div>
         <div class="show">
-            <aloe-button icon="download" icon-position="left" :loading="loading" @click="loading=!loading">左边
+            <aloe-button icon="download" icon-position="left" :loading="true">左边
             </aloe-button>
         </div>
         <div class="show">

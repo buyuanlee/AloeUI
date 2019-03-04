@@ -12,5 +12,9 @@ Vue.component('aloe-button-group', ButtonGroup);
 Vue.config.productionTip = false;
 
 new Vue({
-    render: h => h(App),
+    data:{
+        loading: true
+    },
+    render: h => h(App)
 }).$mount('#app');
+
