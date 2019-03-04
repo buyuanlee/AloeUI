@@ -35,9 +35,8 @@
 </script>
 
 <style lang="scss" scoped>
-    $bg-color: #409EFF;
-    $font-color: #fff;
-    $border-radius: 5px;
+    @import "../assets/basic";
+
     .icon {
         width: 1em;
         height: 1em;
@@ -48,20 +47,23 @@
     .aloe-button {
         font-size: 14px;
         font-weight: 500;
-        color: $font-color;
-        background-color: $bg-color;
+        color: $text;
+        background: $main;
+        border-color: $main;
         border-radius: $border-radius;
-        padding: 0 1em;
+        padding: .5em 1em;
         display: inline-flex;
         justify-content: center;
         align-items: center;
         vertical-align: middle;
+        outline: none;
 
-        &:hover {border-color: orangered;}
+        &:hover {background: $main-hover;border-color: $main-hover;}
 
-        &:active {border-color: bisque;}
+        &:active {background: $main-active;border-color: $main-active;}
 
-        &:focus {border-color: green;}
+        &:focus {background: $main-hover;border-color: $main-hover;}
+
 
         > .icon {order: 1;margin-right: .3em}
 

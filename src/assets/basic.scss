@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+}
+
+$main: #409EFF;
+$main-hover: #66b1ff;
+$main-active: #3a8ee6;
+$success: #67C23A;
+$success-hover: #85ce61;
+$success-active: #5daf34;
+$warning: #E6A23C;
+$warning-hover: #ebb563;
+$warning-active: #cf9236;
+$danger: #F56C6C;
+$danger-hover: #f78989;
+$danger-active: #dd6161;
+$info: #909399;
+$info-hover: #a6a9ad;
+$info-active: #82848a;
+$text: #fff;
+$font-size: 14px;
+$border-radius: 4px;

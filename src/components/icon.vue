@@ -19,6 +19,8 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/basic";
+
     .aloe-icon {
         width: 1em;
         height: 1em;
