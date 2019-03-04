@@ -27,6 +27,9 @@
                 <aloe-button icon="right" icon-position="right">右边</aloe-button>
             </aloe-button-group>
         </div>
+        <div class="show">
+            <aloe-input></aloe-input>
+        </div>
     </div>
 </template>
 
@@ -34,13 +37,15 @@
     import Icon from './components/icon'
     import Button from './components/button'
     import ButtonGroup from './components/button-group'
+    import Input from './components/input'
 
     export default {
         name: 'app',
         components: {
             'aloe-icon': Icon,
             'aloe-button': Button,
-            'aloe-button-group': ButtonGroup
+            'aloe-button-group': ButtonGroup,
+            'aloe-input': Input
         }
     }
 </script>
