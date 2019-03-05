@@ -9,7 +9,7 @@
         name: "aloe-button-group",
         mounted() {
             for (let node of this.$el.children) {
-                let name = node.nodeName.toLowerCase()
+                let name = node.nodeName.toLowerCase();
                 if (name !== 'button') {
                     console.warn(`button-group的子元素应该全部是button，而你的子元素包含了${name}标签`)
                 }

@@ -26,6 +26,10 @@
                 <aloe-button>更多</aloe-button>
                 <aloe-button icon="right" icon-position="right">右边</aloe-button>
             </aloe-button-group>
+            <aloe-button-group>
+                <p>ss</p>
+                <p>sh</p>
+            </aloe-button-group>
         </div>
         <div class="show">
             <aloe-input></aloe-input>
