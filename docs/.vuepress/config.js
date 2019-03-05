@@ -8,8 +8,17 @@ module.exports = {
             {text: 'External', link: 'https://google.com'},
         ],
         sidebar: [
-            '/intro/',
-            '/get-started/'
+            {
+                title: '开始',
+                children: [
+                    '/intro/',
+                    '/get-started/'
+                ]
+            },
+            {
+                title: '介绍',
+                children: [ '/intro/','/get-started/' ]
+            }
         ]
     }
 };
