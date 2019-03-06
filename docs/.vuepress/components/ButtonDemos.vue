@@ -1,6 +1,8 @@
 <template>
     <div>
         <aloe-button>主要按钮</aloe-button>
+        <aloe-button icon="download">下载</aloe-button>
+        <aloe-button icon="setting">设置</aloe-button>
     </div>
 </template>
 
@@ -9,7 +11,7 @@
     import Button from '../../../src/components/button'
 
     export default {
-        name: "aloe-button",
+        name: "ButtonDemos",
         components: {
             'aloe-button': Button
         }

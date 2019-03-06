@@ -1,6 +1,9 @@
 module.exports = {
     title: 'Aloe UI',
     description: '一套简约风格UI',
+    markdown: {
+        lineNumbers: true
+    },
     themeConfig: {
         nav: [
             {text: 'Home', link: '/'},
@@ -20,7 +23,7 @@ module.exports = {
             },
             {
                 title: '组件',
-                children: ['/components/','/components/button']
+                children: ['/components/', '/components/button']
             }
         ]
     }
