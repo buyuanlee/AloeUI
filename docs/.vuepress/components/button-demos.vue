@@ -1,17 +1,17 @@
 <template>
     <div>
-        <aloe-icon name="download"></aloe-icon>
+        <aloe-button>主要按钮</aloe-button>
     </div>
 </template>
 
 <script>
 
-    import Icon from '../../../src/components/icon'
+    import Button from '../../../src/components/button'
 
     export default {
-        name: "aloe-icon",
+        name: "aloe-button",
         components: {
-            'aloe-icon': Icon
+            'aloe-button': Button
         }
     }
 </script>
