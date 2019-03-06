@@ -2,7 +2,7 @@
     <button class="aloe-button" :class="{[`position-${iconPosition}`]:true}">
         <aloe-icon class="icon" v-if="icon&&!loading" :name="icon"></aloe-icon>
         <aloe-icon class="loading icon" v-if="loading" name="loading"></aloe-icon>
-        <div class="content">
+        <div class="aloe-button-content">
             <slot></slot>
         </div>
     </button>
@@ -44,7 +44,7 @@
     }
 
     .aloe-button {
-        font-size: 14px;
+        font-size: $font-size;
         font-weight: 500;
         color: $text;
         background: $main;
@@ -66,18 +66,18 @@
 
         > .icon {order: 1;margin-right: .3em}
 
-        > .content {order: 2;}
+        > .aloe-button-content {order: 2;}
 
         &.position-left {
             > .icon {order: 1;margin-right: .3em}
 
-            > .content {order: 2;}
+            > .aloe-button-content {order: 2;}
         }
 
         &.position-right {
             > .icon {order: 2;margin-right: 0;margin-left: .3em}
 
-            > .content {order: 1;}
+            > .aloe-button-content {order: 1;}
         }
     }
 </style>

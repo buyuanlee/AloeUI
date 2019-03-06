@@ -9,15 +9,18 @@ module.exports = {
         ],
         sidebar: [
             {
-                title: '开始',
+                title: '关于AloeUI',
                 children: [
                     '/intro/',
-                    '/get-started/'
                 ]
             },
             {
-                title: '介绍',
-                children: [ '/intro/','/get-started/' ]
+                title: '快速开始',
+                children: ['/get-started/']
+            },
+            {
+                title: '组件',
+                children: ['/components/','/components/button']
             }
         ]
     }
