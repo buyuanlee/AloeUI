@@ -2,7 +2,7 @@
 home: true
 heroImage: /hero.png
 actionText: 快速上手 →
-actionLink: /guide/
+actionLink: /intro/
 features:
 - title: 简约
   details: 专注于本身

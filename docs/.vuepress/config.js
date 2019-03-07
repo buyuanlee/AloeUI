@@ -1,9 +1,13 @@
 module.exports = {
     title: 'Aloe UI',
     description: '一套简约风格UI',
+    base: '/AloeUI/',
     markdown: {
         lineNumbers: true
     },
+    head: [
+        ['link', {rel: 'shortcut icon', type: "image/x-icon", href: `./favicon.ico`}]
+    ],
     themeConfig: {
         nav: [
             {text: 'Home', link: '/'},
@@ -23,7 +27,7 @@ module.exports = {
             },
             {
                 title: '组件',
-                children: ['/components/', '/components/button']
+                children: ['/components/', '/components/icon','/components/button','/components/input','/components/button-group']
             }
         ]
     }
