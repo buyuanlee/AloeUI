@@ -7,7 +7,7 @@
             <aloe-button>主要按钮</aloe-button>
         </div>
         <div class="show">
-            <aloe-button icon="download" icon-position="left" :loading="true">左边
+            <aloe-button icon="download" icon-position="left">左边
             </aloe-button>
         </div>
         <div class="show">
@@ -34,6 +34,10 @@
             <aloe-input disabled value="我是不可用"></aloe-input>
             <aloe-input readonly="" value="我是只读内容"></aloe-input>
             <aloe-input warning="请检查输入格式"></aloe-input>
+        </div>
+        <div class="show">
+            <aloe-input></aloe-input>
+            <aloe-input ></aloe-input>
         </div>
     </div>
 </template>

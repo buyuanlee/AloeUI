@@ -11,7 +11,7 @@ module.exports = {
     themeConfig: {
         nav: [
             {text: 'Home', link: '/'},
-            {text: 'Guide', link: '/guide/'},
+            {text: 'Github', link: 'https://github.com/buyuanlee'},
             {text: 'External', link: 'https://google.com'},
         ],
         sidebar: [
