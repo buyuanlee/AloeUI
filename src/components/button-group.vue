@@ -41,6 +41,7 @@
                 border-left: .5px solid #dcdfe6;
                 border-top-right-radius: $border-radius;
                 border-bottom-right-radius: $border-radius;
+                margin-left: -1px;
             }
 
             &:hover {
