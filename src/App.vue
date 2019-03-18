@@ -37,7 +37,43 @@
         </div>
         <div class="show">
             <aloe-input></aloe-input>
-            <aloe-input ></aloe-input>
+            <aloe-input></aloe-input>
+        </div>
+        <div class="show">
+            <aloe-row>
+                <aloe-col></aloe-col>
+                <aloe-col></aloe-col>
+            </aloe-row>
+            <aloe-row>
+                <aloe-col></aloe-col>
+                <aloe-col></aloe-col>
+                <aloe-col></aloe-col>
+            </aloe-row>
+            <aloe-row>
+                <aloe-col span="2"></aloe-col>
+                <aloe-col span="22"></aloe-col>
+            </aloe-row>
+            <aloe-row>
+                <aloe-col span="10"></aloe-col>
+                <aloe-col span="14"></aloe-col>
+            </aloe-row>
+            <aloe-row>
+                <aloe-col span="6"></aloe-col>
+                <aloe-col span="18"></aloe-col>
+            </aloe-row>
+            <aloe-row>
+                <aloe-col span="4"></aloe-col>
+                <aloe-col span="16" offset="4"></aloe-col>
+            </aloe-row>
+            <aloe-row>
+                <aloe-col span="10"></aloe-col>
+                <aloe-col span="14"></aloe-col>
+            </aloe-row>
+            <hr>
+            <aloe-row gutter="30">
+                <aloe-col></aloe-col>
+                <aloe-col></aloe-col>
+            </aloe-row>
         </div>
     </div>
 </template>
@@ -47,6 +83,8 @@
     import Button from './components/button'
     import ButtonGroup from './components/button-group'
     import Input from './components/input'
+    import Col from './components/col'
+    import Row from './components/row'
 
     export default {
         name: 'app',
@@ -54,7 +92,9 @@
             'aloe-icon': Icon,
             'aloe-button': Button,
             'aloe-button-group': ButtonGroup,
-            'aloe-input': Input
+            'aloe-input': Input,
+            'aloe-row': Row,
+            'aloe-col': Col
         }
     }
 </script>
