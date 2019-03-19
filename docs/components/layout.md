@@ -162,16 +162,15 @@ title:Layout-布局
 </aloe-row>
 ```
 
-**Attributes**
-:::tip
-当设置loading时，默认不展示，点击出现loading状态，再次点击消失
-:::
+**Attributes `<aloe-row>`**
 |  参数   | 说明   | 类型   | 可选参数| 默认参数 |
 |--------|--------|--------|--------|--------|
-|danger  | 危险按钮| Boolean |    --    |   false   |
-|success | 成功按钮| Boolean |    --    |   false   |
-|info    | 信息按钮| Boolean |    --    |   false   |
-|warning | 警告按钮| Boolean |    --    |   false   |
-|position | 图标位置| String |left,right|   left    |
-|loading | 加载中| Boolean   |   ----   |   false   |
+|gutter  | 设置子元素的间隙| Number,String |    --    |   0   |
+|justify | 设置对齐方式| String |start,end,center,between,around|   start   |
+
+**Attributes `<aloe-col>`**
+|  参数   | 说明   | 类型   | 可选参数| 默认参数 |
+|--------|--------|--------|--------|--------|
+|span  | 元素占比| Number,String |0-100|   --   |
+|offset | 偏移占比| Number,String |0-100|   0   |
 
