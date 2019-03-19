@@ -41,6 +41,34 @@ title:Layout-布局
 </aloe-row>
 ```
 
+## 比例布局
+:::tip
+通过设置`span`时，将`<aloe-col>`按照固定比例创建
+:::
+
+<ClientOnly>
+<ScaleLayoutDemos></ScaleLayoutDemos>
+</ClientOnly>
+
+**示例代码**
+```html
+<aloe-row>
+    <aloe-col span="30"><div class="col-content dark"></div></aloe-col>
+    <aloe-col span="70"><div class="col-content light"></div></aloe-col>
+</aloe-row>
+<aloe-row>
+    <aloe-col span="50"><div class="col-content dark"></div></aloe-col>
+    <aloe-col span="20"><div class="col-content light"></div></aloe-col>
+    <aloe-col span="30"><div class="col-content dark"></div></aloe-col>
+</aloe-row>
+<aloe-row>
+    <aloe-col span="10"><div class="col-content dark"></div></aloe-col>
+    <aloe-col span="15"><div class="col-content light"></div></aloe-col>
+    <aloe-col span="30"><div class="col-content dark"></div></aloe-col>
+    <aloe-col span="45"><div class="col-content light"></div></aloe-col>
+</aloe-row>
+```
+
 **Attributes**
 :::tip
 当设置loading时，默认不展示，点击出现loading状态，再次点击消失
