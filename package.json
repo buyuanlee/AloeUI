@@ -45,6 +45,9 @@
       "autoprefixer": {}
     }
   },
+  "resolutions": {
+    "webpack-dev-middleware": "3.6.0"
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
