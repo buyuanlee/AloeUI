@@ -33,9 +33,10 @@
         flex-wrap: wrap;
         color: #3eaf7c;
         box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .2);
+
+        .aloe-button-group {
+            margin: 15px;
+        }
     }
 
-    .aloe-button-group {
-        margin: 15px;
-    }
 </style>

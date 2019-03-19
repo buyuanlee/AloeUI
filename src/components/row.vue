@@ -1,5 +1,5 @@
 <template>
-    <div class="row" :style="rowStyle">
+    <div class="row" :style="rowStyle" :class="rowClass">
         <slot></slot>
     </div>
 </template>
@@ -8,11 +8,23 @@
     export default {
         name: "aloe-row",
         props: {
-            gutter: {type: [Number, String]}
+            gutter: {type: [Number, String]},
+            justify:{
+                type:String,
+                validator(value){
+                    return['start','end','center','between','around'].includes(value)
+                }
+
+            }
         },
         computed: {
             rowStyle() {
                 return {marginLeft: -this.gutter / 2 + 'px', marginRight: -this.gutter / 2 + 'px'}
+            },
+            rowClass(){
+                return [
+                    this.justify&&`justify-${this.justify}`
+                ]
             }
         },
         mounted() {
@@ -26,5 +38,20 @@
 <style scoped lang="scss">
     .row {
         display: flex;
+        &.justify-start{
+            justify-content: flex-start;
+        }
+        &.justify-end{
+        justify-content: flex-end;
+    }
+        &.justify-center{
+            justify-content: center;
+        }
+        &.justify-between{
+            justify-content: space-between;
+        }
+        &.justify-around{
+            justify-content: space-around;
+        }
     }
 </style>

@@ -50,28 +50,31 @@
                 <aloe-col></aloe-col>
             </aloe-row>
             <aloe-row>
-                <aloe-col span="2"></aloe-col>
-                <aloe-col span="22"></aloe-col>
+                <aloe-col span="1"></aloe-col>
+                <aloe-col span="99"></aloe-col>
             </aloe-row>
             <aloe-row>
                 <aloe-col span="10"></aloe-col>
-                <aloe-col span="14"></aloe-col>
+                <aloe-col span="90"></aloe-col>
             </aloe-row>
             <aloe-row>
-                <aloe-col span="6"></aloe-col>
-                <aloe-col span="18"></aloe-col>
+                <aloe-col span="30"></aloe-col>
+                <aloe-col span="70"></aloe-col>
             </aloe-row>
             <aloe-row>
-                <aloe-col span="4"></aloe-col>
-                <aloe-col span="16" offset="4"></aloe-col>
+                <aloe-col span="20"></aloe-col>
+                <aloe-col span="60" offset="20"></aloe-col>
             </aloe-row>
             <aloe-row>
-                <aloe-col span="10"></aloe-col>
-                <aloe-col span="14"></aloe-col>
+                <aloe-col span="40"></aloe-col>
+                <aloe-col span="60"></aloe-col>
             </aloe-row>
             <hr>
-            <aloe-row gutter="30">
+            <aloe-row gutter="10">
                 <aloe-col></aloe-col>
+                <aloe-col></aloe-col>
+            </aloe-row>
+            <aloe-row>
                 <aloe-col></aloe-col>
             </aloe-row>
         </div>

@@ -37,18 +37,18 @@
     .col {
         height: 50px;
         background: $main;
-        width: 50%;
         border: 1px solid $main*1.5;
         $class-prefix: col-;
-        @for $n from 1 through 24 {
+        width: 100%;
+        @for $n from 0 through 100 {
             &.#{$class-prefix}#{$n} {
-                width: ($n/24)*100%;
+                width: ($n/100)*100%;
             }
         }
         $class-prefix: offset-;
-        @for $n from 1 through 24 {
+        @for $n from 0 through 100 {
             &.#{$class-prefix}#{$n} {
-                margin-left: ($n/24)*100%;
+                margin-left: ($n/100)*100%;
             }
         }
     }
