@@ -1,5 +1,5 @@
 <template>
-    <div class="col" :class="colClass" :style="colStyle">
+    <div class="aloe-col" :class="colClass" :style="colStyle">
         <slot></slot>
     </div>
 </template>
@@ -34,10 +34,7 @@
 <style scoped lang="scss">
     @import "../assets/basic";
 
-    .col {
-        height: 50px;
-        background: $main;
-        border: 1px solid $main*1.5;
+    .aloe-col {
         $class-prefix: col-;
         width: 100%;
         @for $n from 0 through 100 {

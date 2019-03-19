@@ -1,5 +1,5 @@
 <template>
-    <div class="row" :style="rowStyle" :class="rowClass">
+    <div class="aloe-row" :style="rowStyle" :class="rowClass">
         <slot></slot>
     </div>
 </template>
@@ -36,7 +36,7 @@
 </script>
 
 <style scoped lang="scss">
-    .row {
+    .aloe-row {
         display: flex;
         &.justify-start{
             justify-content: flex-start;
