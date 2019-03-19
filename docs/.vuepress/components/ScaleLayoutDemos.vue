@@ -23,7 +23,7 @@
     import Col from '../../../src/components/col'
 
     export default {
-        name: "BasicLayoutDemos",
+        name: "ScaleLayoutDemos",
         components: {
             'aloe-row': Row,
             'aloe-col': Col
