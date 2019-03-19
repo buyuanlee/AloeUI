@@ -43,8 +43,9 @@ title:Layout-布局
 
 ## 比例布局
 :::tip
-通过设置`span`时，将`<aloe-col>`按照固定比例创建
+通过`<aloe-col>`的`span`属性，将`<aloe-col>`按照固定比例创建
 :::
+**实例展示**
 
 <ClientOnly>
 <ScaleLayoutDemos></ScaleLayoutDemos>
@@ -66,6 +67,62 @@ title:Layout-布局
     <aloe-col span="15"><div class="col-content light"></div></aloe-col>
     <aloe-col span="30"><div class="col-content dark"></div></aloe-col>
     <aloe-col span="45"><div class="col-content light"></div></aloe-col>
+</aloe-row>
+```
+
+## 间隔布局
+:::tip
+通过`<aloe-row>`的`gutter`属性，设置`<aloe-col>`的间隔
+:::
+
+**实例展示**
+
+<ClientOnly>
+<GutterLayoutDemos></GutterLayoutDemos>
+</ClientOnly>
+
+**示例代码**
+
+```html
+<aloe-row gutter="20">
+    <aloe-col span="25"><div class="col-content dark"></div></aloe-col>
+    <aloe-col span="25"><div class="col-content light"></div></aloe-col>
+    <aloe-col span="25"><div class="col-content dark"></div></aloe-col>
+    <aloe-col span="25"><div class="col-content light"></div></aloe-col>
+</aloe-row>
+<aloe-row gutter="10">
+    <aloe-col span="20"><div class="col-content dark"></div></aloe-col>
+    <aloe-col span="30"><div class="col-content light"></div></aloe-col>
+    <aloe-col span="20"><div class="col-content dark"></div></aloe-col>
+    <aloe-col span="30"><div class="col-content light"></div></aloe-col>
+</aloe-row>
+
+```
+
+## 偏移布局
+:::tip
+通过`<aloe-col>`的`offset`属性，设置`<aloe-col>`见的间隔
+:::
+
+**实例展示**
+
+<ClientOnly>
+<OffsetLayoutDemos></OffsetLayoutDemos>
+</ClientOnly>
+
+**示例代码**
+
+```html
+<aloe-row>
+    <aloe-col span="25"><div class="col-content dark"></div></aloe-col>
+    <aloe-col span="25" offset="25"><div class="col-content light"></div></aloe-col>
+</aloe-row>
+<aloe-row>
+    <aloe-col span="20" offset="20"><div class="col-content dark"></div></aloe-col>
+    <aloe-col span="30" offset="30"><div class="col-content light"></div></aloe-col>
+</aloe-row>
+<aloe-row>
+    <aloe-col span="50" offset="25"><div class="col-content dark"></div></aloe-col>
 </aloe-row>
 ```
 
