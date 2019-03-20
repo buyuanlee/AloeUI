@@ -74,8 +74,11 @@
                 <aloe-col></aloe-col>
                 <aloe-col></aloe-col>
             </aloe-row>
+        </div>
+        <div class="box">
             <aloe-row>
-                <aloe-col></aloe-col>
+                <aloe-col span="20" :pad="{span:30}"><div class="col-content dark"></div></aloe-col>
+                <aloe-col span="20" :pad="{span:10}"><div class="col-content light"></div></aloe-col>
             </aloe-row>
         </div>
     </div>
@@ -104,7 +107,20 @@
 
 <style lang="scss" scoped>
     @import "./assets/basic";
+    .box {
+        .aloe-row {
+            margin-bottom: 10px;
+        }
 
+        .col-content {
+            height: 30px;
+            border-radius: $border-radius;
+
+            &.dark {background-color: $main-active;}
+
+            &.light {background-color: $main-hover;}
+        }
+    }
     .show {
         margin: 1em;
     }

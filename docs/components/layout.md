@@ -162,6 +162,36 @@ title:Layout-布局
 </aloe-row>
 ```
 
+## 响应式布局
+:::tip
+预设5个尺寸，分别是`phone`、`pad`、`narrow-pc`、`pc`、`wide-pc`,默认为`phone`(无需设置)
+:::
+
+**实例展示**
+:::tip
+调整浏览器窗口查看变化
+:::
+
+<ClientOnly>
+<RespondLayoutDemos></RespondLayoutDemos>
+</ClientOnly>
+
+**示例代码**
+
+```html
+<aloe-row gutter="5">
+    <aloe-col span="35" :pad="{span:30}" :narrow-pc="{span:25}" :pc="{span:20}" :wide-pc="{span:15}">
+        <div class="col-content dark"></div>
+    </aloe-col>
+    <aloe-col span="35" :pad="{span:40}" :narrow-pc="{span:50}" :pc="{span:60}" :wide-pc="{span:70}">
+        <div class="col-content light"></div>
+    </aloe-col>
+    <aloe-col span="35" :pad="{span:30}" :narrow-pc="{span:25}" :pc="{span:20}" :wide-pc="{span:15}">
+        <div class="col-content dark"></div>
+    </aloe-col>
+</aloe-row>
+```
+
 **Attributes `<aloe-row>`**
 |  参数   | 说明   | 类型   | 可选参数| 默认参数 |
 |--------|--------|--------|--------|--------|
@@ -173,4 +203,7 @@ title:Layout-布局
 |--------|--------|--------|--------|--------|
 |span  | 元素占比| Number,String |0-100|   --   |
 |offset | 偏移占比| Number,String |0-100|   0   |
-
+|pad | `>577px`响应式栅格数或者栅格属性对象| Object  |--|   --   |
+|narrow-pc | `>768px`响应式栅格数或者栅格属性对象| Object |--|   --   |
+|pc | `≥992px`响应式栅格数或者栅格属性对象| Object|--|   --   |
+|wide-pc | `≥1200px`响应式栅格数或者栅格属性对象| Object |--|   --   |

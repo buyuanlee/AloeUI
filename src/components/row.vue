@@ -38,6 +38,7 @@
 <style scoped lang="scss">
     .aloe-row {
         display: flex;
+        flex-wrap: wrap;
         &.justify-start{
             justify-content: flex-start;
         }
