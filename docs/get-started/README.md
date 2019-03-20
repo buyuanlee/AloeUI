@@ -52,7 +52,7 @@ new Vue({
 ```
 ## 盒模型
 :::warning
-s使用本框架前，您需要手动添加border-box盒模型，否则会影响样式。
+使用本框架前，您需要手动添加border-box盒模型，否则会影响样式。
 :::
 ```css
 *, *::before, *::after {
