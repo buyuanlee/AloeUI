@@ -1,17 +1,14 @@
 <template>
-    <div class="content">
+    <div class="aloe-aside">
         <slot></slot>
     </div>
 </template>
 
 <script>
     export default {
-        name: "aloe-content"
+        name: "aloe-aside"
     }
 </script>
 
 <style scoped lang="scss">
-    .content {
-       flex-grow: 1;
-    }
 </style>

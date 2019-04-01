@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <div class="aloe-footer">
         <slot></slot>
     </div>
 </template>
@@ -11,5 +11,4 @@
 </script>
 
 <style scoped lang="scss">
-    .footer {}
 </style>

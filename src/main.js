@@ -10,8 +10,8 @@ import Col from './components/col'
 import Layout from './components/layout'
 import Header from './components/header'
 import Footer from './components/footer'
-import Sider from './components/sider'
-import Content from './components/content'
+import Aside from './components/aside'
+import Main from './components/main'
 import Toast from './components/toast'
 
 Vue.component('aloe-icon', Icon);
@@ -23,8 +23,8 @@ Vue.component('aloe-col', Col);
 Vue.component('aloe-layout',Layout);
 Vue.component('aloe-header',Header);
 Vue.component('aloe-footer',Footer);
-Vue.component('aloe-sider',Sider);
-Vue.component('aloe-content',Content);
+Vue.component('aloe-Aside',Aside);
+Vue.component('aloe-content',Main);
 Vue.component('aloe-toast', Toast);
 
 Vue.config.productionTip = false;

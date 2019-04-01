@@ -1,5 +1,5 @@
 <template>
-    <div class="header">
+    <div class="aloe-header">
         <slot></slot>
     </div>
 </template>
@@ -11,5 +11,4 @@
 </script>
 
 <style scoped lang="scss">
-    .header {}
 </style>

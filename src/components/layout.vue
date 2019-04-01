@@ -1,5 +1,5 @@
 <template>
-    <div class="layout" :class="layoutClass">
+    <div class="aloe-layout" :class="layoutClass">
         <slot></slot>
     </div>
 </template>
@@ -10,14 +10,14 @@
         data() {
             return {
                 layoutClass: {
-                    hasSider: false
+                    hasAside: false
                 }
             }
         },
         mounted() {
             this.$children.forEach((vm) => {
-                if (vm.$options.name === 'aloe-sider') {
-                    this.layoutClass.hasSider = true
+                if (vm.$options.name === 'aloe-aside') {
+                    this.layoutClass.hasAside = true
                 }
             })
         }
@@ -25,11 +25,11 @@
 </script>
 
 <style scoped lang="scss">
-    .layout {
+    .aloe-layout {
         display: flex;
         flex-grow: 1;
         flex-direction: column;
-    &.hasSider{
+    &.hasAside{
         flex-direction: row;
     }
     }
