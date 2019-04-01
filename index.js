@@ -5,4 +5,4 @@ import Input from './src/components/input'
 import Row from './src/components/row'
 import Col from './src/components/col'
 
-export {Button, ButtonGroup, Icon, Input,Row,Col}
+export {Button, ButtonGroup, Icon, Input, Row, Col}

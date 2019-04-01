@@ -22,26 +22,19 @@ Vue.component('aloe-button-group', ButtonGroup);
 Vue.component('aloe-input', Input);
 Vue.component('aloe-row', Row);
 Vue.component('aloe-col', Col);
-Vue.component('aloe-layout',Layout);
-Vue.component('aloe-header',Header);
-Vue.component('aloe-footer',Footer);
-Vue.component('aloe-aside',Aside);
-Vue.component('aloe-main',Main);
+Vue.component('aloe-layout', Layout);
+Vue.component('aloe-header', Header);
+Vue.component('aloe-footer', Footer);
+Vue.component('aloe-aside', Aside);
+Vue.component('aloe-main', Main);
 Vue.component('aloe-toast', Toast);
 
 Vue.config.productionTip = false;
 
 new Vue({
-    data: {
+    data: {},
+    created() {
     },
-    created(){
-        this.$toast()
-    },
-    methods:{
-        showToast(){
-            this.$toast('我是一个Toast')
-        }
-    },
+    methods: {},
     render: h => h(App)
 }).$mount('#app');
-
