@@ -19,7 +19,7 @@
     import Col from '../../../src/components/col'
 
     export default {
-        name: "RespondLayoutDemos",
+        name: "RespondGridDemos",
         components: {
             'aloe-row': Row,
             'aloe-col': Col

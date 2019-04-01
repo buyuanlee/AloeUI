@@ -30,7 +30,7 @@
     import Col from '../../../src/components/col'
 
     export default {
-        name: "BasicLayoutDemos",
+        name: "BasicGridDemos",
         components: {
             'aloe-row': Row,
             'aloe-col': Col

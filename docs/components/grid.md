@@ -1,17 +1,17 @@
 ---
-title:Layout-布局
+title:Grid-网格系统
 ---
-# Layout-布局
+# Grid-网格系统
 通过100分栏，可以迅速的创建各种比例的布局
 
-## 基础布局
+## 基础结构
 :::tip
 不设置`span`时，将按照等比例划分
 :::
 **实例展示**
 
 <ClientOnly>
-<BasicLayoutDemos></BasicLayoutDemos>
+<BasicGridDemos></BasicGridDemos>
 </ClientOnly>
 
 **示例代码**
@@ -41,14 +41,14 @@ title:Layout-布局
 </aloe-row>
 ```
 
-## 比例布局
+## 比例结构
 :::tip
 通过`<aloe-col>`的`span`属性，将`<aloe-col>`按照固定比例创建
 :::
 **实例展示**
 
 <ClientOnly>
-<ScaleLayoutDemos></ScaleLayoutDemos>
+<ScaleGridDemos></ScaleGridDemos>
 </ClientOnly>
 
 **示例代码**
@@ -70,7 +70,7 @@ title:Layout-布局
 </aloe-row>
 ```
 
-## 间隔布局
+## 间隔结构
 :::tip
 通过`<aloe-row>`的`gutter`属性，设置`<aloe-col>`的间隔
 :::
@@ -78,7 +78,7 @@ title:Layout-布局
 **实例展示**
 
 <ClientOnly>
-<GutterLayoutDemos></GutterLayoutDemos>
+<GutterGridDemos></GutterGridDemos>
 </ClientOnly>
 
 **示例代码**
@@ -99,7 +99,7 @@ title:Layout-布局
 
 ```
 
-## 偏移布局
+## 偏移结构
 :::tip
 通过`<aloe-col>`的`offset`属性，设置`<aloe-col>`见的间隔
 :::
@@ -107,7 +107,7 @@ title:Layout-布局
 **实例展示**
 
 <ClientOnly>
-<OffsetLayoutDemos></OffsetLayoutDemos>
+<OffsetGridDemos></OffsetGridDemos>
 </ClientOnly>
 
 **示例代码**
@@ -134,7 +134,7 @@ title:Layout-布局
 **实例展示**
 
 <ClientOnly>
-<FlexLayoutDemos></FlexLayoutDemos>
+<FlexGridDemos></FlexGridDemos>
 </ClientOnly>
 
 **示例代码**
@@ -162,7 +162,7 @@ title:Layout-布局
 </aloe-row>
 ```
 
-## 响应式布局
+## 响应式结构
 :::tip
 预设5个尺寸，分别是`phone`、`pad`、`narrow-pc`、`pc`、`wide-pc`,默认为`phone`(无需设置)
 :::
@@ -173,7 +173,7 @@ title:Layout-布局
 :::
 
 <ClientOnly>
-<RespondLayoutDemos></RespondLayoutDemos>
+<RespondGridDemos></RespondGridDemos>
 </ClientOnly>
 
 **示例代码**

@@ -1,24 +1,16 @@
 <template>
     <div class="box">
-        <aloe-row justify="center">
+        <aloe-row gutter="20">
+            <aloe-col span="25"><div class="col-content dark"></div></aloe-col>
+            <aloe-col span="25"><div class="col-content light"></div></aloe-col>
             <aloe-col span="25"><div class="col-content dark"></div></aloe-col>
             <aloe-col span="25"><div class="col-content light"></div></aloe-col>
         </aloe-row>
-        <aloe-row justify="end">
-            <aloe-col span="25"><div class="col-content dark"></div></aloe-col>
-            <aloe-col span="25"><div class="col-content light"></div></aloe-col>
-        </aloe-row>
-        <aloe-row justify="start">
-            <aloe-col span="25"><div class="col-content dark"></div></aloe-col>
-            <aloe-col span="25"><div class="col-content light"></div></aloe-col>
-        </aloe-row>
-        <aloe-row justify="between">
-            <aloe-col span="25"><div class="col-content dark"></div></aloe-col>
-            <aloe-col span="25"><div class="col-content light"></div></aloe-col>
-        </aloe-row>
-        <aloe-row justify="around">
-            <aloe-col span="25"><div class="col-content dark"></div></aloe-col>
-            <aloe-col span="25"><div class="col-content light"></div></aloe-col>
+        <aloe-row gutter="10">
+            <aloe-col span="20"><div class="col-content dark"></div></aloe-col>
+            <aloe-col span="30"><div class="col-content light"></div></aloe-col>
+            <aloe-col span="20"><div class="col-content dark"></div></aloe-col>
+            <aloe-col span="30"><div class="col-content light"></div></aloe-col>
         </aloe-row>
     </div>
 </template>
@@ -28,7 +20,7 @@
     import Col from '../../../src/components/col'
 
     export default {
-        name: "FlexLayoutDemos",
+        name: "GutterGridDemos",
         components: {
             'aloe-row': Row,
             'aloe-col': Col
