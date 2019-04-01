@@ -77,10 +77,22 @@
         </div>
         <div class="box">
             <aloe-row>
-                <aloe-col span="20" :pad="{span:30}"><div class="col-content dark"></div></aloe-col>
-                <aloe-col span="20" :pad="{span:10}"><div class="col-content light"></div></aloe-col>
+                <aloe-col span="20" :pad="{span:30}">
+                    <div class="col-content dark"></div>
+                </aloe-col>
+                <aloe-col span="20" :pad="{span:10}">
+                    <div class="col-content light"></div>
+                </aloe-col>
             </aloe-row>
         </div>
+        <aloe-layout style="height: 100vh">
+            <aloe-sider class="demo">侧边栏</aloe-sider>
+            <aloe-layout>
+                <aloe-header class="demo">头部内容</aloe-header>
+                <aloe-content class="demo">主要内容</aloe-content>
+                <aloe-footer class="demo">底部内容</aloe-footer>
+            </aloe-layout>
+        </aloe-layout>
     </div>
 </template>
 
@@ -105,15 +117,18 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     @import "./assets/basic";
-    .box {
-        .aloe-row {
-            margin-bottom: 10px;
-        }
 
-        .col-content {
-            height: 30px;
+    .demo {
+        border: 1px solid $main;
+        min-height: 100px;
+    }
+
+    .box {
+        .aloe-row {margin-bottom: 10px;}
+
+        .col-content {height: 30px;
             border-radius: $border-radius;
 
             &.dark {background-color: $main-active;}
@@ -121,12 +136,8 @@
             &.light {background-color: $main-hover;}
         }
     }
-    .show {
-        margin: 1em;
-    }
 
-    #app {
-        text-align: center;
-        margin-top: 60px;
-    }
+    .show {margin: 1em;}
+
+    #app {text-align: center;margin-top: 60px;}
 </style>
