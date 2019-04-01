@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+import plugin from './plugin'
 import Icon from './components/icon'
 import Button from './components/button'
 import ButtonGroup from './components/button-group'
@@ -14,6 +15,7 @@ import Aside from './components/aside'
 import Main from './components/main'
 import Toast from './components/toast'
 
+Vue.use(plugin);
 Vue.component('aloe-icon', Icon);
 Vue.component('aloe-button', Button);
 Vue.component('aloe-button-group', ButtonGroup);
@@ -23,8 +25,8 @@ Vue.component('aloe-col', Col);
 Vue.component('aloe-layout',Layout);
 Vue.component('aloe-header',Header);
 Vue.component('aloe-footer',Footer);
-Vue.component('aloe-Aside',Aside);
-Vue.component('aloe-content',Main);
+Vue.component('aloe-aside',Aside);
+Vue.component('aloe-main',Main);
 Vue.component('aloe-toast', Toast);
 
 Vue.config.productionTip = false;

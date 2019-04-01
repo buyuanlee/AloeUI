@@ -86,10 +86,10 @@
             </aloe-row>
         </div>
         <aloe-layout style="height: 100vh">
-            <aloe-sider class="demo">侧边栏</aloe-sider>
+            <aloe-aside class="demo">侧边栏</aloe-aside>
             <aloe-layout>
                 <aloe-header class="demo">头部内容</aloe-header>
-                <aloe-content class="demo">主要内容</aloe-content>
+                <aloe-main class="demo">主要内容</aloe-main>
                 <aloe-footer class="demo">底部内容</aloe-footer>
             </aloe-layout>
         </aloe-layout>
